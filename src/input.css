@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@theme {
+  --font-family-fraunces: Fraunces, sans-serif;
+  --font-family-montserrat: Montserrat, sans-serif;
+  --color-green: hsl(158, 36%, 37%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-darkblue: hsl(212, 21%, 14%);
+  --color-grayishblue: hsl(228, 12%, 48%);
+}

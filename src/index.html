@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="geomydas" />
+    <meta
+      name="description"
+      content=" A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <style>
+      @font-face {
+        font-display: swap;
+        font-family: "Fraunces";
+        font-style: normal;
+        font-weight: 700;
+        src: url("../fonts/fraunces-v31-latin-700.woff2") format("woff2");
+      }
+      @font-face {
+        font-display: swap;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        src: url("../fonts/montserrat-v26-latin-500.woff2") format("woff2");
+      }
+      @font-face {
+        font-display: swap;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        src: url("../fonts/montserrat-v26-latin-700.woff2") format("woff2");
+      }
+    </style>
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body
+    class="bg-cream flex min-h-screen flex-col items-center justify-center p-4"
+  >
+    <main class="md:grid md:grid-cols-2 md:grid-rows-1 max-w-xl">
+      <picture>
+        <source srcset="../images/image-product-desktop.jpg" media="(min-width: 48rem)">
+        <img src="../images/image-product-mobile.jpg" alt="Photograph of the luxurious perfume with bedazzling leaves around it" class="rounded-t-xl h-full  w-full  md:rounded-l-xl md:rounded-r-none">
+      </picture>
+      <div class="rounded-b-xl bg-white p-6  md:rounded-bl-none md:rounded-r-xl ">
+        <h1
+        class="text-grayishblue font-montserrat mb-4 uppercase tracking-widest"
+        >
+          Perfume
+        </h1>
+        <h2 class="text-darkblue  text-3xl font-fraunces mb-4">
+          Gabrielle Essence Eau De Parfum
+        </h2>
+        <p class="text-grayishblue font-montserrat mb-6">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <h3 class="sr-only" id="currentprice">Current Price</h3>
+        <h3 class="sr-only" id="previousprice">Previous Price`</h3>
+        <p class="flex items-center gap-8 mb-4">
+          <strong
+            aria-describedby="currentprice"
+            class="font-fraunces text-green text-3xl"
+            >$149.99</strong
+          ><span
+            aria-describedby="previousprice"
+            class="font-montserrat text-grayishblue line-through"
+            >$169.99</span
+          >
+        </p>
+        <button
+          class="bg-green font-montserrat flex w-full items-center justify-center rounded-md py-4 text-white transition hover:brightness-75 gap-4"
+        >
+          <img src="../images/icon-cart.svg" aria-hidden="true" />Add to Cart
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
