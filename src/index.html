@@ -43,41 +43,45 @@
   <body
     class="bg-cream flex min-h-screen flex-col items-center justify-center p-4"
   >
-    <main class="md:grid md:grid-cols-2 md:grid-rows-1 max-w-xl">
+    <main class="max-w-xl md:grid md:grid-cols-2 md:grid-rows-1">
       <picture>
-        <source srcset="../images/image-product-desktop.jpg" media="(min-width: 48rem)">
-        <img src="../images/image-product-mobile.jpg" alt="Photograph of the luxurious perfume with bedazzling leaves around it" class="rounded-t-xl h-full  w-full  md:rounded-l-xl md:rounded-r-none">
+        <source
+          srcset="../images/image-product-desktop.jpg"
+          media="(min-width: 48rem)"
+        />
+        <img
+          src="../images/image-product-mobile.jpg"
+          alt="Photograph of the luxurious perfume with bedazzling leaves around it"
+          class="h-full w-full rounded-t-xl md:rounded-l-xl md:rounded-r-none"
+        />
       </picture>
-      <div class="rounded-b-xl bg-white p-6  md:rounded-bl-none md:rounded-r-xl ">
-        <h1
-        class="text-grayishblue font-montserrat mb-4 uppercase tracking-widest"
-        >
-          Perfume
-        </h1>
-        <h2 class="text-darkblue  text-3xl font-fraunces mb-4">
-          Gabrielle Essence Eau De Parfum
-        </h2>
+      <div class="rounded-b-xl bg-white p-6 md:rounded-r-xl md:rounded-bl-none">
+        <hgroup>
+          <p
+            class="text-grayishblue font-montserrat mb-4 uppercase tracking-widest"
+          >
+            Perfume
+          </p>
+          <h2 class="text-darkblue font-fraunces mb-4 text-3xl">
+            Gabrielle Essence Eau De Parfum
+          </h2>
+        </hgroup>
         <p class="text-grayishblue font-montserrat mb-6">
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
-        <h3 class="sr-only" id="currentprice">Current Price</h3>
-        <h3 class="sr-only" id="previousprice">Previous Price`</h3>
-        <p class="flex items-center gap-8 mb-4">
-          <strong
-            aria-describedby="currentprice"
-            class="font-fraunces text-green text-3xl"
-            >$149.99</strong
-          ><span
-            aria-describedby="previousprice"
-            class="font-montserrat text-grayishblue line-through"
-            >$169.99</span
+        <p class="mb-4 flex items-center gap-8">
+          <span class="font-fraunces text-green text-3xl">$149.99</span>
+          <s class="font-montserrat text-grayishblue">
+            <span class="sr-only">Old price:</span>
+            $169.99</s
           >
         </p>
         <button
-          class="bg-green font-montserrat flex w-full items-center justify-center rounded-md py-4 text-white transition hover:brightness-75 gap-4"
+          class="bg-green flex w-full items-center justify-center gap-4 rounded-md py-4 transition hover:brightness-75"
         >
-          <img src="../images/icon-cart.svg" aria-hidden="true" />Add to Cart
+          <img src="../images/icon-cart.svg" alt="" aria-hidden="true" />
+          <span class="font-montserrat text-white">Add to Cart</span>
         </button>
       </div>
     </main>
